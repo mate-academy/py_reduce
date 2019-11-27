@@ -1,6 +1,17 @@
-from typing import Callable, Iterable, Any, List
+'''
+Module
+'''
+from typing import Callable, Any
 
 
-def reduce_(func: Callable[[Any, Any], Any], l: Iterable[Any]) -> Any:
+def reduce_(func: Callable[[Any, Any], Any], array) -> Any:
+    '''
 
-    return 42
+    :param func:
+    :param array:
+    :return:
+    '''
+    result = array[0]
+    for i in array[1:]:
+        result = func(result, i)
+    return result

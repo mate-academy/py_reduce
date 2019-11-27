@@ -1,7 +1,7 @@
 '''
 Module
 '''
-from typing import Callable, Iterable, Any
+from typing import Callable, Any
 
 
 def reduce_(func: Callable[[Any, Any], Any], array) -> Any:

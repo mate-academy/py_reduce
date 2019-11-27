@@ -1,6 +1,18 @@
-from typing import Callable, Iterable, Any, List
+"""
+docstring
+"""
 
 
-def reduce_(func: Callable[[Any, Any], Any], l: Iterable[Any]) -> Any:
+def reduce_(func, lst):
+    """
 
-    return 42
+    :param func:
+    :param lst:
+    :return:
+    """
+    res = lst[0]
+    j = 1
+    while j != len(lst):
+        res = func(res, lst[j])
+        j += 1
+    return res

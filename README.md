@@ -1,6 +1,6 @@
 # py_reduce
 
-Create your own implementation of filter() function.
+Create your own implementation of reduce() function.
 
 To deploy project on your local machine create new virtual environment and execute this command:
 
